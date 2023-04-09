@@ -1,0 +1,27 @@
+{
+  "name": "april-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "welcome.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "puppeteer": "^19.8.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgebatalinski/april-9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgebatalinski/april-9/issues"
+  },
+  "homepage": "https://github.com/georgebatalinski/april-9#readme"
+}
