@@ -12,14 +12,13 @@ const puppeteer = require('puppeteer');
 
   // Perform UI tests here
   await page.click('button');
+  const result = await page.evaluate(() => {
+    return showWelcome();
+  });
+  console.log('Result of showWelcome():', result);
+
   debugger; // Add this line to pause execution
   await page.waitForTimeout(1000 * 60 * 5); // Wait for 5 minutes
 
-  const alertMessage = page.on('dialog', async (dialog) => {
-    console.log('Alert message:', dialog.message());
-    await dialog.dismiss();
-  });
-
   await browser.close();
 })();
-
